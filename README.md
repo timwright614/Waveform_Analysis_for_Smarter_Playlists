@@ -15,10 +15,7 @@ Central to this work is a numerical representation of the audio, a 2D tensor wit
 
 https://en.wikipedia.org/wiki/Spectrogram
 
-
-
-
-With this understanding, music could be
+Initially
 
 
 The below website visually shows our system in action. Displayed are 8000 songs (dots) from FMA (Free Music Archive), distributed in 3d space such that song's proximity to one another reflects a measure of sonic similarity. This distribution is achieved through supervised training of a CNN model to catagorise genre, giving the model a general abilty to differentate
