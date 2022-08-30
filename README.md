@@ -56,7 +56,7 @@ For best results we used all 64 dimensions and cosign similarity in order to cal
 
 https://scutellaria-aafpg-streamlit-app-67a07f.streamlitapp.com/
 
-### CNN Autoencoder Approach.
+## CNN Autoencoder Approach.
 For background:https://en.wikipedia.org/wiki/Autoencoder
 
 We had initially envisioned using an auto encoder to compress the high dimension spectrogram tensors into a dense layer of something around 50 neurons, hoping that within this compressed information would be useful information regarding a songs sound. We found that in order for the autoencoder to train effectively, the spectrogram needed to be reduced in resolution to around 128x32 during pre-processing, becoming the input dimension for the auto encoder which goes on to condense the information to a dense layer of 256 neurons. We had hoped to use a much higher resolution (something like 1024x128) and compress it to 64 or 32 dense, latent space dimensions but were unable to get the model to fit with such a reduction. In retrospect, this application is perhaps not suited to an autoencoder, which likely struggles to find an underlying pattern pattern to songs waveforms, such that they can be effectively compressed to such an extent.
