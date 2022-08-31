@@ -47,6 +47,8 @@ Using predict on the dataset outputs 64 values for each track, giving them a loc
 
 The below notebook shows the processing of the audio into spectrogram image datasets, training of a CNN model using genre as targets, deconstruction of the model to output the 64 dimension representation of each song, and the plotting of this distribution showing it's correlation with genre.
 
+[insert notebook]
+
 ### Automated Playlist Building
 The most obvious use for this distribution is to build a cohesive-sounding playlist based on a seed song by taking the nearest neighbours to the seed song within the distribution.
 
